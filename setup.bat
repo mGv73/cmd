@@ -1,5 +1,17 @@
+@echo off
 powershell -Command "Set-ExecutionPolicy Bypass -Scope CurrentUser" & powershell -Command "Set-ExecutionPolicy Bypass"
-powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/mGv73/cmd/main/doskeys.bat -OutFile doskeys.bat"
-doskeys.bat
-powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/mGv73/cmd/refs/heads/main/theme.bat -OutFile theme.bat"
-theme.bat
+doskey ip=ipconfig /all
+doskey restart=shutdown /r /t 0
+doskey sd=shutdown /s /t 0
+doskey c=setup.bat
+doskey rickroll=powershell -ExecutionPolicy Bypass -File "%%driveLetter%%rickroll.ps1"
+doskey dmouse=powershell -ExecutionPolicy Bypass -File "%%driveLetter%%disablemouse.ps1"
+for /f %%I in ('wmic logicaldisk where "VolumeName='DUCKY'" get DeviceID ^| findstr /r /v "^$"') do set driveLetter=%%I
+cls & prompt pikaprompt: & color 06 & echo. & echo   (\__/)^ & echo   (o^-^o) & echo  z(_(")(") & echo. & echo ======================================================================================================================= & echo.
+echo 1. ip
+echo 2. sd
+echo 3. restart
+echo 4. c
+echo 5 (prank). rickroll
+echo 6 (prank). dmouse
+echo. & echo =======================================================================================================================
