@@ -1,9 +1,5 @@
-@echo off
-cls & prompt pikaprompt: & color 06 & echo. & echo   (\__/)^ & echo   (o^-^o) & echo  z(_(")(") & echo. & echo ======================================================================================================================= & echo.
-echo 1. ip
-echo 2. sd
-echo 3. restart
-echo 4. c
-echo 5 (prank). rickroll
-echo 6 (prank). dmouse
-echo. & echo =======================================================================================================================
+powershell -Command "Set-ExecutionPolicy Bypass -Scope CurrentUser" & powershell -Command "Set-ExecutionPolicy Bypass"
+powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/mGv73/cmd/main/doskeys.bat -OutFile doskeys.bat"
+doskeys.bat
+powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/mGv73/cmd/main/setup.bat -OutFile setup.bat"
+setup.bat
