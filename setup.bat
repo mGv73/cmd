@@ -8,10 +8,10 @@ doskey rickroll=powershell -ExecutionPolicy Bypass -File "%%driveLetter%%rickrol
 doskey dmouse=powershell -ExecutionPolicy Bypass -File "%%driveLetter%%disablemouse.ps1"
 for /f %%I in ('wmic logicaldisk where "VolumeName='DUCKY'" get DeviceID ^| findstr /r /v "^$"') do set driveLetter=%%I
 cls & prompt pikaprompt: & color 06 & echo. & echo   (\__/)^ & echo   (o^-^o) & echo  z(_(")(") & echo. & echo ======================================================================================================================= & echo.
-echo 1. ip
-echo 2. sd
-echo 3. restart
-echo 4. c
+echo 1. c
+echo 2. ip
+echo 3. sd
+echo 4. restart
 echo 5 (prank). rickroll
 echo 6 (prank). dmouse
 echo. & echo =======================================================================================================================
