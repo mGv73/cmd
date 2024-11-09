@@ -1,38 +1,30 @@
-# Ignore system files
 .DS_Store
 Thumbs.db
 
-# Ignore log files and temp files
 *.log
 *.tmp
 *.swp
 *.swo
 
-# Ignore node_modules (for JavaScript/Node.js projects)
 node_modules/
 
-# Ignore Python cache and virtual environment files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 venv/
 
-# Ignore build files
 /dist/
 /build/
 /out/
 
-# Ignore dependency directories (Java/Maven, .NET)
 target/
 bin/
 obj/
 
-# Ignore IDE/editor-specific files
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
-# Ignore OS-specific hidden files
 *.DS_Store
