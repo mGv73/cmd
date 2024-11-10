@@ -28,3 +28,10 @@ Then move the files from .\cmd to the parent directory of the CIRCUITPY and dele
 You also need to change the name of the CIRCUITPY drive to DUCKY for some of the scripts to work.
 ## Settings
 Some setings
+## Extra
+
+To reset the Pi Pico, run:
+
+```bash
+curl -L -o flash_nuke.uf2 "https://github.com/mGv73/cmd/raw/refs/heads/main/uf2s/flash_nuke.uf2"
+```
