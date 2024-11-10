@@ -21,7 +21,7 @@ curl -L -o adafruit-circuitpython-raspberry_pi_pico-sv-8.2.1.uf2 "https://github
 The Pi Pico will disconnect and then reconect as CIRCUITPY. Navigate to the directory of your CIRCUITPY, then run:
 
 ```bash
-git clone -b download --single-branch https://github.com/mGv73/cmd.git
+git clone -b download --single-branch --depth 1 https://github.com/mGv73/cmd.git
 ```
 
 Then move the files from .\cmd to the parent directory of the CIRCUITPY and delete the cmd folder.
