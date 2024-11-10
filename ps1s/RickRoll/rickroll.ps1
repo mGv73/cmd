@@ -164,7 +164,7 @@ Play-WAV
 
 # Delete contents of Temp folder 
 
-rm $env:TEMP\* -r -Force -ErrorAction SilentlyContinue
+Remove-Item $env:TEMP\* -r -Force -ErrorAction SilentlyContinue
 
 # Delete run box history
 
