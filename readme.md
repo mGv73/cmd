@@ -1,9 +1,9 @@
 
 # My cmd setup script
 
-The repository that I accsess with the payload.dd script.
+How to install and use my configuration for the Raspberry Pi Pico.
 
-+ [Install](#Installation)
++ [Installation](#Installation)
 + [Settings](#Settings)
 
 
@@ -12,20 +12,13 @@ The repository that I accsess with the payload.dd script.
 
 ## Installation
 
-Install my-project with npm
+Navigate to the directory of your CIRCUITPY. Then run:
 
 ```bash
-  npm install my-project
-  cd my-project
+  git clone -b download --single-branch https://github.com/mGv73/cmd.git .
 ```
+
+You also need to change the name of the CIRCUITPY drive to DUCKY for some of the scripts to work.
     
 ## Settings
 Some setings
-## Running Tests
-
-To run tests, run the following comman
-
-```bash
-  npm run test
-```
-
