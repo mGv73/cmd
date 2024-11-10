@@ -12,6 +12,6 @@ echo 1. c
 echo 2. ip
 echo 3. sd
 echo 4. restart
-echo 5 (prank). rickroll
-echo 6 (prank). dmouse
+echo 5 (prank). dmouse
+echo 6 (prank). rickroll
 echo. & echo =======================================================================================================================
