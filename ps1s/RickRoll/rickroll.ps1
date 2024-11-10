@@ -17,14 +17,14 @@ $image =  "https://raw.githubusercontent.com/mGv73/cmd/main/ps1s/RickRoll/572c48
 
 $i = -join($image,"?dl=1")
 
-iwr $i -O $env:TMP\i.png
+Invoke-WebRequest $i -O $env:TMP\i.png
 
 # Download WAV file; replace link to $wav to add your own sound
 
 $wav = "https://github.com/mGv73/cmd/raw/main/ps1s/RickRoll/Never%20Gonna%20Give%20You%20Up%20Original.wav"
 
 $w = -join($wav,"?dl=1")
-iwr $w -O $env:TMP\s.wav
+Invoke-WebRequest $w -O $env:TMP\s.wav
 
 
 
